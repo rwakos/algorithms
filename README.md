@@ -11,9 +11,9 @@ version of them...
 
 Every algorithm will have a series of tests, to prove accuracy and performance (like hackerRank does).
 
+The command for running it would be: 
+
 jest "name of the folder/file" --watch
-
-
 
 
 ## Install
@@ -21,5 +21,5 @@ NPM: npm init
 
 Jest: npm install jest -g
 
-The command for running it would be: 
+
 
