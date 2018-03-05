@@ -25,10 +25,16 @@ expect(console.log.mock.calls[1][0]).toEqual('##');
 expect(console.log.mock.calls.length).toEqual(2);
 });
 
-test('Inverse Pyramid called with n = 3', () => {
-    inv_pyramid(3);
-expect(console.log.mock.calls[0][0]).toEqual('  #');
-expect(console.log.mock.calls[1][0]).toEqual(' ##');
-expect(console.log.mock.calls[2][0]).toEqual('###');
-expect(console.log.mock.calls.length).toEqual(3);
+test('Inverse Pyramid called with n = 9', () => {
+    inv_pyramid(9);
+expect(console.log.mock.calls[0][0]).toEqual('        #');
+expect(console.log.mock.calls[1][0]).toEqual('       ##');
+expect(console.log.mock.calls[2][0]).toEqual('      ###');
+expect(console.log.mock.calls[3][0]).toEqual('     ####');
+expect(console.log.mock.calls[4][0]).toEqual('    #####');
+expect(console.log.mock.calls[5][0]).toEqual('   ######');
+expect(console.log.mock.calls[6][0]).toEqual('  #######');
+expect(console.log.mock.calls[7][0]).toEqual(' ########');
+expect(console.log.mock.calls[8][0]).toEqual('#########');
+expect(console.log.mock.calls.length).toEqual(9);
 });

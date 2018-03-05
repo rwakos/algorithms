@@ -17,7 +17,6 @@ function invPyramidIter(n) {
         console.log(result);
         inv_pyramid.push(result);
     }
-
     return inv_pyramid;
 }
 
