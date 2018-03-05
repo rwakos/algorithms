@@ -1,6 +1,8 @@
 /*
 * Pyramid  >> O(n~2)
 * */
+/*
+Iterative
 
 function pyramid(n){
     const result = [];
@@ -24,5 +26,30 @@ function pyramid(n){
 
     return result;
 }
+*/
+
+//Recursive
+
+function pyramid(n, row = 0, line=''){
+    //console.log("n: "+n+" row:"+row);
+    const cols = ((n - 1) * 2) + 1;
+    const blank = (n - row - 1);
+
+    if (row === n){
+        return;  //The end...
+    }
+
+    if (line.length === cols)
+    {
+        console.log(line);
+        return pyramid(n, row + 1);
+    }
+    let pos = line.length;
+    let char = ((pos < blank)^(pos >= cols-blank)) ? ' ' : 'X';
+
+    pyramid(n, row, line+char);
+}
+
+//pyramid(2);
 
 module.exports = pyramid;
