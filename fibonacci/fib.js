@@ -8,7 +8,7 @@ function fib(n){
         let add = result[i-2] + result[i-1];
         result.push(add);
     }
-    return result[result.length-1];
+    return result[n];
 }
 */
 /* Recursive  E~2 */
